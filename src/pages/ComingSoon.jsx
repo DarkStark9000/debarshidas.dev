@@ -19,7 +19,7 @@ function ComingSoon() {
           <br />
         </div>
 
-        <div className="mb-4 leading-relaxed font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-bl from-slate-200 to-slate-900 text-5xl sm:text-6xl ">
+        <div className="mb-4 leading-normal font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-bl from-slate-200 to-slate-900 text-5xl sm:text-6xl ">
           Coming Soon.
         </div>
 
