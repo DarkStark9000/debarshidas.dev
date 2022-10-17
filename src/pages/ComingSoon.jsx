@@ -38,6 +38,25 @@ function ComingSoon() {
             LNKDN
           </a>
         </div>
+
+        <div className="flex flex-col gap-x-1 -mt-4 leading-tight font-thin tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-slate-500 to-gray-300 text-sm sm:text-xs ">
+          <p>
+            inspired from{' '}
+            <a href="https://dua.wtf/" className="underline decoration-slate-600">
+              dua.wtf
+            </a>{' '}
+            by{' '}
+            <a href="https://twitter.com/pragdua" className="underline decoration-slate-600">
+              @pragdua
+            </a>
+          </p>
+          <p>
+            artwork by{' '}
+            <a href="https://www.instagram.com/kaushikfx/" className="underline decoration-slate-600">
+              kaushik bhattad
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
