@@ -10,7 +10,7 @@ function ComingSoon() {
         className="w-full mt-0  md:w-3/4 md:mt-20 transition-all"
       />
       <div className="-mt-20 mb-20 lg:-mt-48 flex flex-col gap-12 w-3/4 md:w-3/6 p-4">
-        <div className="text-2xl leading-tight font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-slate-200 to-violet-800">
+        <div className="text-2xl leading-tight font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-slate-200 to-violet-800">
           build
           <br />
           break
@@ -19,7 +19,7 @@ function ComingSoon() {
           <br />
         </div>
 
-        <div className="mb-4 leading-normal font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-bl from-slate-200 to-slate-900 text-5xl sm:text-6xl ">
+        <div className="mb-4 leading-tight font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-bl from-slate-200 to-slate-900 text-5xl sm:text-6xl ">
           Coming Soon.
         </div>
 
