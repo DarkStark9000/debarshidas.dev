@@ -3,14 +3,14 @@ import Wall from './wall.png';
 
 function ComingSoon() {
   return (
-    <div className="flex flex-col items-center mx-auto md:w-4/5">
+    <div className="mx-auto flex flex-col items-center md:w-4/5">
       <img
         src={Wall}
         alt="Vincent Van Gogh with Kun Faya Kun"
-        className="w-full mt-0  md:w-3/4 md:mt-20 transition-all"
+        className="mt-0 w-full transition-all md:mt-20 md:w-3/4"
       />
-      <div className="-mt-20 mb-20 lg:-mt-48 flex flex-col gap-12 w-3/4 md:w-3/6 p-4">
-        <div className="text-2xl leading-tight font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-slate-200 to-violet-800">
+      <div className="-mt-20 mb-20 flex w-3/4 flex-col gap-12  p-4 md:w-3/6 lg:-mt-48">
+        <div className=" bg-gradient-to-br from-slate-200 to-violet-800 bg-clip-text text-2xl font-semibold leading-tight tracking-tight text-transparent">
           build
           <br />
           break
@@ -19,27 +19,27 @@ function ComingSoon() {
           <br />
         </div>
 
-        <div className="mb-4 leading-tight font-medium tracking-tight bg-clip-text text-transparent bg-gradient-to-bl from-slate-200 to-slate-900 text-5xl sm:text-6xl ">
+        <div className="mt-2 mb-4 bg-gradient-to-bl from-slate-200 to-slate-900 bg-clip-text py-2 text-5xl font-extrabold leading-10 tracking-tight text-transparent sm:text-6xl ">
           Coming Soon.
         </div>
 
-        <div className="flex gap-x-6 -mt-4 leading-tight font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-cyan-200 to-violet-800 text-lg sm:text-xl ">
+        <div className="-mt-4 flex gap-x-6 bg-gradient-to-br from-cyan-200 to-violet-800 bg-clip-text text-lg font-bold leading-tight tracking-tight text-transparent sm:text-xl ">
           Debarshi Das
           <a
             href="https://github.com/DarkStark9000"
-            className="overline decoration-pink-500 hover:underline text-sm sm:text-base"
+            className="text-sm overline decoration-pink-500 hover:underline sm:text-base"
           >
             GTHB
           </a>
           <a
-            href="https://www.linkedin.com/in/thedebarshidas/"
-            className="overline decoration-pink-500 hover:underline text-sm sm:text-base"
+            href="https://peerlist.io/thedebarshidas"
+            className="text-sm overline decoration-pink-500 hover:underline sm:text-base"
           >
-            LNKDN
+            PRLST
           </a>
         </div>
 
-        <div className="flex flex-col gap-x-1 -mt-4 leading-tight font-thin tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-slate-500 to-gray-300 text-sm sm:text-xs ">
+        <div className="-mt-4 flex flex-col gap-x-1 bg-gradient-to-br from-slate-500 to-gray-300 bg-clip-text text-sm font-thin leading-tight tracking-tight text-transparent sm:text-xs ">
           <p>
             inspired from{' '}
             <a href="https://dua.wtf/" className="underline decoration-slate-600">
