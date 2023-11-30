@@ -1,31 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Cursor = () => {
-  const cursorDot = document.querySelector('[data-cursor-dot]');
-  const cursorOutline = document.querySelector('[data-cursor-outline]');
+  useEffect(() => {
+    const cursorDot = document.querySelector('[data-cursor-dot]');
+    const cursorOutline = document.querySelector('[data-cursor-outline]');
 
-  window.addEventListener('mousemove', e => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+    const moveCursor = (mouseX, mouseY) => {
+      const dotTransform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      cursorDot.style.transform = dotTransform;
 
-    cursorDot.style.left = `${mouseX}px`;
-    cursorDot.style.top = `${mouseY}px`;
+      const outlineTransform = `translate3d(${mouseX - 13}px, ${mouseY - 13}px, 0)`;
+      cursorOutline.style.transform = outlineTransform;
+    };
 
-    cursorOutline.animate(
-      {
-        left: `${mouseX}px`,
-        top: `${mouseY}px`
-      },
-      {
-        duration: 500,
-        easing: 'ease-out'
-      }
-    );
-  });
+    const onMouseMove = e => {
+      requestAnimationFrame(() => moveCursor(e.clientX, e.clientY));
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove);
+    };
+  }, []);
+
   return (
     <>
-      <div class="cursor-dot" data-cursor-dot></div>
-      <div class="cursor-outline" data-cursor-outline></div>
+      <div className="cursor-dot" data-cursor-dot></div>
+      <div className="cursor-outline" data-cursor-outline></div>
     </>
   );
 };

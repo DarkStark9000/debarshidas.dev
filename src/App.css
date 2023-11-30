@@ -1,23 +1,22 @@
-
 .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background: rgb(242, 236, 236);
-  }
-  
-  .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid hsla(0, 0%, 100%, 0.5);
-  }
-  
-  .cursor-dot,
-  .cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-  }
+  width: 5px;
+  height: 5px;
+  background: rgb(242, 236, 236);
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  transition: transform 150ms ease;
+}
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 50%;
+}
