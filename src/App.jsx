@@ -1,7 +1,13 @@
+import Cursor from './components/Cursor';
 import './App.css';
 
 function App() {
-  return <div>Welcome to my corner on the Internet</div>;
+  return (
+    <div>
+      <Cursor />
+      Hello World
+    </div>
+  );
 }
 
 export default App;
