@@ -24,6 +24,10 @@
   --font-size-xxxl: 11.089rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Fallback variables for browsers that don't support clamp */
 @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
   :root {
