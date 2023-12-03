@@ -50,11 +50,7 @@ const Journey = () => {
                 hidden: { scaleX: 0 },
                 visible: { scaleX: 1, transition: { delay: 1.35 * index } }
               }}
-              style={
-                index > 0
-                  ? { backgroundColor: '#fae2a1' }
-                  : { outline: 'none', height: '0.2px !important', borderTop: '2px dashed #121212' }
-              }
+              style={index > 0 ? { backgroundColor: '#fae2a1', height: '2px' } : { borderTop: '2px dashed #feffed' }}
             />
             <motion.div
               className="journey__event-dot"

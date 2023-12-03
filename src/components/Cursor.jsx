@@ -3,14 +3,10 @@ import React, { useEffect } from 'react';
 const Cursor = () => {
   useEffect(() => {
     const cursorDot = document.querySelector('[data-cursor-dot]');
-    const cursorOutline = document.querySelector('[data-cursor-outline]');
 
     const moveCursor = (mouseX, mouseY) => {
-      const dotTransform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      const dotTransform = `translate3d(${mouseX - 8}px, ${mouseY - 10}px, 0)`;
       cursorDot.style.transform = dotTransform;
-
-      const outlineTransform = `translate3d(${mouseX - 13}px, ${mouseY - 13}px, 0)`;
-      cursorOutline.style.transform = outlineTransform;
     };
 
     const onMouseMove = e => {
@@ -24,12 +20,7 @@ const Cursor = () => {
     };
   }, []);
 
-  return (
-    <>
-      <div className="cursor-dot" data-cursor-dot></div>
-      <div className="cursor-outline" data-cursor-outline></div>
-    </>
-  );
+  return <div className="cursor-dot" data-cursor-dot />;
 };
 
 export default Cursor;
