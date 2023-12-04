@@ -25,16 +25,16 @@ const Journey = () => {
   return (
     <div className="journey__container scroll-section">
       <div className="background__text">Journey</div>
-      <Reveal>
-        <div
-          className="journey__content"
-          style={{
-            padding: '4rem'
-          }}
-        >
-          I did stuff - I lived. I'm still living. I'm still doing stuff.
-        </div>
-      </Reveal>
+
+      <div
+        className="journey__content"
+        style={{
+          marginTop: '4rem'
+        }}
+      >
+        <Reveal>I did stuff - I lived. I'm still living. I'm still doing stuff.</Reveal>
+      </div>
+
       <motion.div
         className="journey__timeline"
         ref={ref}
