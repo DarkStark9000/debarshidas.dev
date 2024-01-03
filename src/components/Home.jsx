@@ -15,17 +15,22 @@ const Home = () => {
         >
           <motion.div
             className="first__name"
-            animate={{ x: hoverState ? -38 : 0, y: hoverState ? -55 : 0 }}
+            // animate={{ x: hoverState ? -38 : 0, y: hoverState ? -55 : 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
             DEBARSHI
           </motion.div>
           <motion.div
             className="last__name"
-            animate={{ x: hoverState ? 38 : 0, y: hoverState ? 55 : 0 }}
+            // animate={{ x: hoverState ? -680 : 0, y: hoverState ? 0 : 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
+            style={{
+              textTransform: hoverState ? 'uppercase' : 'none',
+              color: hoverState ? '#fff' : 'transparent',
+              fontSize: hoverState ? '16rem' : '20rem'
+            }}
           >
-            Das
+            das
           </motion.div>
         </motion.div>
       </motion.div>
