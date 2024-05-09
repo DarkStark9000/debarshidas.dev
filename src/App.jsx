@@ -1,30 +1,25 @@
-import './App.css';
-import About from './components/About';
-import Cursor from './components/Cursor';
-import Home from './components/Home';
-import Journey from './components/Journey';
-import Navbar from './components/Navbar';
+import { motion } from 'framer-motion';
+import { LampContainer } from './components/ui/lamp';
 import useSmoothScroll from './hooks/useSmoothScroll';
 
 function App() {
   const scrollRef = useSmoothScroll();
 
   return (
-    <>
-      <div className="line__container">
-        <div className="separator"></div>
-        <div className="separator"></div>
-        <div className="separator"></div>
-        <div className="separator"></div>
-      </div>
-      <div ref={scrollRef} className="scroll-container">
-        <Cursor />
-        <Navbar />
-        <Home />
-        <About />
-        <Journey />
-      </div>
-    </>
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: 'easeInOut'
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        Coming <br /> Soon
+      </motion.h1>
+    </LampContainer>
   );
 }
 
